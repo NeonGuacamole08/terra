@@ -1,0 +1,126 @@
+.header{
+height: 300px;
+  width: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+  /* Flexbox Magic */
+  display: flex;
+  flex-direction: column; /* NEW: Stacks the text vertically */
+  justify-content: center; /* Centers the stack vertically in the box */
+  align-items: center;     /* Centers the text horizontally */
+  
+  font-family: 'Rockwell Extra Bold', serif;
+  line-height: normal; 
+}
+
+.Small{
+font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 6px; /* Spreads the letters out to match the image */
+  color: white;
+  margin: 0;
+  margin-bottom: -15px; /* Pulls the big text a little closer to the small text */
+  z-index: 2;
+}
+
+.Big{
+font-size: 15vw; /* Adjust this to make it fit your screen perfectly */
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.nav{
+ font-family: sans-serif;
+  
+}
+
+.navbar {
+  background-color: rgba(213, 211, 204, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+  margin-top:50px;
+  margin-bottom: 50px;
+  border-radius: 80px;
+
+}
+
+.Word{
+    font-family: 'Rockwell Extra Bold', serif;
+    font-size: 18px;
+    color: rgb(1, 41, 56);
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu.list {
+ margin-right: 25px;
+ 
+}
+
+
+
+
+.navlink{
+    color: rgb(1, 41, 56);
+    font-size: 18px;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(213, 211, 204);
+    border-radius: 80px;
+    padding: 8px 24px;
+    font-weight: bold;
+    font-family: 'Rockwell Extra Bold', serif;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cusor: pointer;
+
+}
+
+.navlink:hover,   /* Triggers when the mouse pointer is over the pill */
+.navlink:active,  /* Triggers the exact moment you click down */
+.navlink:focus,   /* Triggers after it's clicked and stays until you click elsewhere */
+.navlink.active { /* The manual class you put in HTML for the current page */
+  border: 2px solid #1a4a5a;
+}
+
+.tagline{
+    position: absolute;
+  top: 110%; /* Adjust this percentage to move it higher or lower on the screen */
+  left: 50%;
+  transform: translateX(-50%); /* Keeps it perfectly centered */
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  
+  /* The "Fantasy" Styling */
+  font-family: 'Rockwell', sans-serif; /* Clean font like the image */
+  font-size: 28px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #00d2ff; /* The bright cyan/light blue color */
+  
+  /* Creating the dark outline and shadow to make it pop */
+  text-shadow: 
+    2px 2px 5px rgba(0, 0, 0, 0.8), /* Main drop shadow */
+    -1px -1px 0 #000, /* Top left outline */
+     1px -1px 0 #000, /* Top right outline */
+    -1px  1px 0 #000, /* Bottom left outline */
+     1px  1px 0 #000; /* Bottom right outline */
+     
+  margin: 0;
+}

@@ -1,0 +1,91 @@
+/* General Page Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Replace 'background.jpg' with your background image file path */
+  background: url('Background Art for Chobani with The Line Animation.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* --- Top Navigation --- */
+.navbar {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: #2b4c6f;
+  background-color: rgba(220, 230, 240, 0.7); /* Translucent light blue-gray */
+  padding: 10px 30px;
+  border-radius: 25px; /* Creates pill shape */
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  backdrop-filter: blur(4px); /* Adds subtle glass blur effect */
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- Hero Center Section --- */
+.hero-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* White Border Box */
+.hero-box {
+  border: 4px solid #ffffff;
+  padding: 20px 50px;
+  width: 90%;
+  max-width: 650px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Top Small Text inside box */
+.tagline {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: -5px;
+}
+
+/* Main UNIS Title */
+.main-title {
+  font-family: 'Georgia', serif;
+  font-size: 7.5rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+  line-height: 1;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Light Blue Subtitle below box */
+.subtitle {
+  margin-top: 25px;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #7ce3ff; /* Solarpunk light cyan text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for readability over green bg */
+}
